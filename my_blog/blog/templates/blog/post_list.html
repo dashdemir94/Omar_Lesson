@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+<html>
+{% block content %}
+    {% for task in tasks %}
+        <div class="task"
+            <h1>Проект: {{task.title}}</h1>
+            <p>Дата публикации: {{task.date}}</p>
+            <h2>Задача: {{task.description}}</h2>
+            <h1><a href="">{{ tasks.title }}</a></h1>
+            <p>{{ tasks.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+</html>
